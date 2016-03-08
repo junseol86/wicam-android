@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/restaurant_list_card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        card_view:cardCornerRadius="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        card_view:cardElevation="0dp"
+        android:layout_weight="0"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/restaurant_list_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_bottom_black"
+                android:layout_alignParentBottom="true"
+                android:alpha="0.4"
+                >
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/restaurant_list_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="45dp"
+                android:layout_marginBottom="22dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:elevation="2dp"
+                />
+
+            <TextView
+                android:alpha="0.67"
+                android:id="@+id/restaurant_list_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="45dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                />
+            
+            <ImageButton
+                android:id="@+id/restaurant_list_favorite_toggle_button"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/restaurant_list_favorite_toggle_off"
+                />
+
+            <RelativeLayout
+                android:id="@+id/restaurant_list_like"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                >
+                <ImageView
+                    android:id="@+id/restaurant_list_like_image"
+                    android:layout_centerVertical="true"
+                    android:layout_width="12.5dp"
+                    android:layout_height="11.5dp"
+                    android:src="@drawable/restaurant_list_like"
+                    />
+                <TextView
+                    android:id="@+id/restaurant_list_like_text"
+                    android:layout_toRightOf="@+id/restaurant_list_like_image"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/white"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <include layout="@layout/a_common_downloading_empty_last"/>
+
+</LinearLayout>

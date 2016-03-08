@@ -1,0 +1,118 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/content_list_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/content_list_favorite_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/content_favorite_on"
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:layout_weight="0"
+                >
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_weight="0"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/content_pictogram"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_centerVertical="true"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/content_list_content_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="@color/text_normal"
+                            android:layout_marginLeft="3dp"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/content_list_desciption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/text_light"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_weight="0"
+                >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/content_drawer_last"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="0"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/recyclerview_loading"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="0">
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="불러오는 중..."
+            android:textColor="@color/text_normal"
+            android:textSize="13sp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
+

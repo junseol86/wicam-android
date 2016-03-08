@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wc_semi_blue"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="115dp"
+        android:layout_height="160dp"
+        android:src="@drawable/intro_wicam_logo"
+        android:layout_centerInParent="true"
+        />
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="25dp"
+        android:src="@drawable/intro_akadev_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        />
+
+</RelativeLayout>

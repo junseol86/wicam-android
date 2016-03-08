@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="transparent" type="color">#00000000</item>
+    <item name="white" type="color">#ffffff</item>
+    <item name="black" type="color">#000000</item>
+    <item name="transparent_black" type="color">#aa000000</item>
+    <item name="dark_gray" type="color">#181818</item>
+    <item name="light_gray" type="color">#cdcdcd</item>
+    <item name="very_light_gray" type="color">#f3f3f3</item>
+
+    <item name="wc_blue" type="color">#33a7ff</item>
+    <item name="wc_semi_blue" type="color">#3cc0ff</item>
+    <item name="wc_half_blue" type="color">#99d3ff</item>
+    <item name="wc_very_light_blue" type="color">#f3fbff</item>
+    <item name="wc_dark_blue" type="color">#2989ff</item>
+    <item name="red" type="color">#ff0000</item>
+    <item name="wc_orange" type="color">#ff8000</item>
+    <item name="yellow" type="color">#ffff00</item>
+
+    <item name="text_normal" type="color">#333333</item>
+    <item name="text_semi_light" type="color">#555555</item>
+    <item name="text_light" type="color">#808080</item>
+    <item name="text_very_light" type="color">#bfbfbf</item>
+</resources>

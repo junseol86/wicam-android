@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <!-- 일정 수로 받아오는 리사이클러뷰의 끝부분에 위치하여 불러오는 중, 항목 없음, 마지막 아이템의 공간 등을 포함함 -->
+
+    <RelativeLayout
+        android:id="@+id/recyclerview_loading"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0">
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="불러오는 중..."
+            android:textColor="@color/text_normal"
+            android:textSize="13sp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/recyclerview_empty"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0">
+        <TextView
+            android:id="@+id/empty_word"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아직 입력된 정보가 없습니다."
+            android:textColor="@color/text_light"
+            android:textSize="13sp"
+            />
+    </RelativeLayout>
+
+    <Space
+        android:id="@+id/recyclerview_last_space"
+        android:layout_width="match_parent"
+        android:layout_height="56dp" />
+
+</LinearLayout>

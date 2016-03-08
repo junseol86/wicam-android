@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wicam" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/wicam_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name=".b_intro_page.IntroActivity"
+            android:label="위캠" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name = "com.wicam.b_select_schools_page.SelectSchoolActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = "com.wicam.c_main_page.MainPage"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = "com.wicam.d_web_view.WebPage"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = "com.wicam.d_default_handong_bus.HandongBus"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = "com.wicam.d_default_handong_bus.HandongBusMap"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = ".d_default_restaurant.list_page.RestaurantListActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = ".d_default_restaurant.detail_page.RestaurantDetailActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = ".d_default_restaurant.RestaurantAddModifyActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = ".a_common_utils.MapActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = ".a_common_utils.WebViewPage"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = ".a_common_utils.account_related.make_nickname.MakeNicknameActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = ".a_common_utils.account_related.comment_related.WriteCommentActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = ".a_common_utils.account_related.CreateContentActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = ".a_common_utils.account_related.add_item.select_location.SelectLocationActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = ".a_common_utils.account_related.add_item.select_schools.SelectSchoolsActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = ".a_common_utils.account_related.RequestAuthority.RequestAuthorityActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = ".d_default_delivery.list_page.DeliveryListActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = ".d_default_delivery.detail_page.DeliveryDetailActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = ".d_default_delivery.menu_page.DeliveryMenuActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = ".d_default_delivery.DeliveryAddModifyActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = ".d_default_phonebook.list_page.PhonebookListActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = ".d_default_phonebook.detail_page.PhonebookDetailActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = ".d_default_phonebook.PhonebookAddModifyActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = ".d_default_advertise.list_page.AdvertiseListActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = ".d_default_advertise.detail_page.AdvertiseDetailActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = ".d_default_advertise.AdvertiseAddModifyActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = ".d_default_lecture.LectureListActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = ".d_default_lecture.LectureDetailActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = ".d_default_lecture.LectureAddActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = ".c_content_add.ContentAddActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = ".d_default_custom.list_page.CustomListActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = ".d_default_custom.detail_page.CustomDetailActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name = ".d_default_custom.CustomAddModifyActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+    </application>
+
+</manifest>

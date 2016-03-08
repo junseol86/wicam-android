@@ -1,0 +1,51 @@
+<LinearLayout
+    android:id="@+id/select_location_item_rl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/select_location_item_not_empty"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_weight="0"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        >
+        <TextView
+            android:id="@+id/location_list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_normal"
+            android:textSize="15sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/select_location_item_empty"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_weight="0"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_normal"
+            android:textSize="15sp"
+            android:text="검색결과가 없습니다."
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

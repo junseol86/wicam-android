@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name = "region">
+        <item>지역전체</item>
+     	<item>양덕</item>
+        <item>장성</item>
+        <item>환호</item>
+        <item>육거리</item>
+    </string-array>  
+    
+    <string-array name = "taxi">
+        <item>영광콜 054-231-2330</item>
+     	<item>육일콜 054-282-6161</item>
+        <item>장기콜 054-276-1442</item>
+        <item>포스콜 054-252-1111</item>
+    </string-array> 
+       
+</resources>

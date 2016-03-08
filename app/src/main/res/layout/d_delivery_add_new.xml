@@ -1,0 +1,645 @@
+
+<LinearLayout
+    android:id="@+id/comment_and_report"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:background="@color/white"
+    tools:context=".MainActivity"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/light_gray"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:padding="15dp"
+                android:background="@color/white"
+                >
+                <TextView
+                    android:id="@+id/school_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/wc_blue"
+                    android:text="업체가 보일 학교(들)"
+                    />
+                <LinearLayout
+                    android:id="@+id/school_ll"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/school_label"
+                    android:layout_marginTop="5dp"
+                    >
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        >
+                        <TextView
+                            android:id="@+id/school_to_see_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_normal"
+                            android:textSize="15sp"
+                            android:text="학교"
+                            />
+                    </RelativeLayout>
+                    <Button
+                        android:id="@+id/school_btn"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:text="추가/변경"
+                        android:textColor="@color/text_normal"
+                        android:textSize="12sp"
+                        android:background="@drawable/rounded_bordered"
+                        android:layout_marginLeft="5dp"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/very_light_gray"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:padding="15dp"
+                android:background="@color/white"
+                >
+                <TextView
+                    android:id="@+id/delivery_name_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/wc_blue"
+                    android:text="업체 이름"
+                    />
+                <EditText
+                    android:id="@+id/delivery_name_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/delivery_name_label"
+                    android:background="@drawable/rounded_bordered"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:textColor="@color/text_normal"
+                    android:textSize="13sp"
+                    />
+                <TextView
+                    android:id="@+id/delivery_name_text_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/wc_blue"
+                    android:textSize="11sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_above="@id/delivery_name_edit_text"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/very_light_gray"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:padding="15dp"
+                android:background="@color/white"
+                >
+                <TextView
+                    android:id="@+id/phone1_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/wc_blue"
+                    android:text="전화번호1"
+                    />
+                <EditText
+                    android:id="@+id/phone1_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/phone1_label"
+                    android:background="@drawable/rounded_bordered"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:textColor="@color/text_normal"
+                    android:textSize="13sp"
+                    android:inputType="number"
+                    />
+                <TextView
+                    android:id="@+id/phone1_text_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/wc_blue"
+                    android:textSize="11sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_above="@id/phone1_edit_text"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/very_light_gray"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:padding="15dp"
+                android:background="@color/white"
+                >
+                <TextView
+                    android:id="@+id/phone2_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_normal"
+                    android:text="전화번호2"
+                    />
+                <EditText
+                    android:id="@+id/phone2_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/phone2_label"
+                    android:background="@drawable/rounded_bordered"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:textColor="@color/text_normal"
+                    android:textSize="13sp"
+                    android:inputType="number"
+                    />
+                <TextView
+                    android:id="@+id/phone2_text_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/wc_blue"
+                    android:textSize="11sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_above="@id/phone2_edit_text"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/very_light_gray"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:padding="15dp"
+                android:background="@color/white"
+                >
+                <TextView
+                    android:id="@+id/includes_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/wc_blue"
+                    android:text="포함하는 메뉴(들)"
+                    />
+                <LinearLayout
+                    android:layout_below="@id/includes_label"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal" android:layout_marginTop="5dp"
+                        android:layout_weight="1" android:layout_width="match_parent" android:layout_height="0dp">
+                        <RelativeLayout
+                            android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content">
+                            <CheckBox
+                                android:id="@+id/fried_chicken"
+                                android:tag="튀긴닭"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_toRightOf="@+id/fried_chicken"
+                                android:text = "튀긴닭"
+                                android:textSize="13sp" android:textColor="@color/text_normal"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content">
+                            <CheckBox
+                                android:id="@+id/non_fried_chicken"
+                                android:tag="안튀긴닭"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_toRightOf="@+id/non_fried_chicken"
+                                android:text = "안튀긴닭"
+                                android:textSize="13sp" android:textColor="@color/text_normal"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content">
+                            <CheckBox
+                                android:id="@+id/korean"
+                                android:tag="한식"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_toRightOf="@+id/korean"
+                                android:text = "한식"
+                                android:textSize="13sp" android:textColor="@color/text_normal"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1" android:layout_width="match_parent" android:layout_height="0dp">
+                        <RelativeLayout
+                            android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content">
+                            <CheckBox
+                                android:id="@+id/snack"
+                                android:tag="분식"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_toRightOf="@+id/snack"
+                                android:text = "분식"
+                                android:textSize="13sp" android:textColor="@color/text_normal"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content">
+                            <CheckBox
+                                android:id="@+id/chinese"
+                                android:tag="중식"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_toRightOf="@+id/chinese"
+                                android:text = "중식"
+                                android:textSize="13sp" android:textColor="@color/text_normal"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content">
+                            <CheckBox
+                                android:id="@+id/japanese"
+                                android:tag="일식"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_toRightOf="@+id/japanese"
+                                android:text = "일식"
+                                android:textSize="13sp" android:textColor="@color/text_normal"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1" android:layout_width="match_parent" android:layout_height="0dp">
+                        <RelativeLayout
+                            android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content">
+                            <CheckBox
+                                android:id="@+id/noodle"
+                                android:tag="국수"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_toRightOf="@+id/noodle"
+                                android:text = "국수"
+                                android:textSize="13sp" android:textColor="@color/text_normal"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content">
+                            <CheckBox
+                                android:id="@+id/bento"
+                                android:tag="도시락"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_toRightOf="@+id/bento"
+                                android:text = "도시락"
+                                android:textSize="13sp" android:textColor="@color/text_normal"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content">
+                            <CheckBox
+                                android:id="@+id/pizza"
+                                android:tag="피자"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_toRightOf="@+id/pizza"
+                                android:text = "피자"
+                                android:textSize="13sp" android:textColor="@color/text_normal"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1" android:layout_width="match_parent" android:layout_height="0dp">
+                        <RelativeLayout
+                            android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content">
+                            <CheckBox
+                                android:id="@+id/pork"
+                                android:tag="돈육"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_toRightOf="@+id/pork"
+                                android:text = "돈육"
+                                android:textSize="13sp" android:textColor="@color/text_normal"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content">
+                            <CheckBox
+                                android:id="@+id/fast_food"
+                                android:tag="패스트푸드"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_toRightOf="@+id/fast_food"
+                                android:text = "패스트푸드"
+                                android:textSize="13sp" android:textColor="@color/text_normal"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content">
+                            <CheckBox
+                                android:id="@+id/others"
+                                android:tag="기타"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_toRightOf="@+id/others"
+                                android:text = "기타"
+                                android:textSize="13sp" android:textColor="@color/text_normal"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/very_light_gray"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:padding="15dp"
+                android:background="@color/white"
+                >
+                <TextView
+                    android:id="@+id/condition_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_normal"
+                    android:text="배달조건 ex)두마리 이상…"
+                    />
+                <EditText
+                    android:id="@+id/condition_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/condition_label"
+                    android:background="@drawable/rounded_bordered"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:textColor="@color/text_normal"
+                    android:textSize="13sp"
+                    />
+                <TextView
+                    android:id="@+id/condition_text_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/wc_blue"
+                    android:textSize="11sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_above="@id/condition_edit_text"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/very_light_gray"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:padding="15dp"
+                android:background="@color/white"
+                >
+                <TextView
+                    android:id="@+id/description_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_normal"
+                    android:text="업체설명"
+                    />
+                <EditText
+                    android:id="@+id/description_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@id/description_label"
+                    android:background="@drawable/rounded_bordered"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:textColor="@color/text_normal"
+                    android:textSize="13sp"
+                    android:gravity="top"
+                    />
+                <TextView
+                    android:id="@+id/description_text_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/wc_blue"
+                    android:textSize="11sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_above="@id/description_edit_text"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/very_light_gray"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:padding="15dp"
+                android:background="@color/white"
+                >
+                <LinearLayout
+                    android:id="@+id/image_buttons"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/image_load_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="전단지 넣기"
+                        android:textColor="@color/text_normal"
+                        android:textSize="12sp"
+                        android:background="@drawable/rounded_bordered"
+                        />
+                    <Button
+                        android:id="@+id/image_clear_button"
+                        android:layout_marginLeft="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="삭제"
+                        android:textColor="@color/text_normal"
+                        android:textSize="12sp"
+                        android:background="@drawable/rounded_bordered"
+                        android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/image_restore_button"
+                        android:layout_marginLeft="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="원래대로"
+                        android:textColor="@color/text_normal"
+                        android:textSize="12sp"
+                        android:background="@drawable/rounded_bordered"
+                        android:visibility="gone"
+                        />
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/image_to_be_uploaded"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/image_buttons"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/very_light_gray"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:padding="15dp"
+                android:background="@color/white"
+                >
+                <TextView
+                    android:id="@+id/menu_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_normal"
+                    android:text="메뉴 (전단지 이미지가 있을 시 생략 가능)"
+                    />
+                <TextView
+                    android:id="@+id/menu_guide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/menu_label"
+                    android:layout_marginTop="3dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/wc_blue"
+                    android:text="\@그룹이름 #그룹설명 :그룹가격\n메뉴이름 #메뉴설명 :메뉴가격"
+                    />
+                <TextView
+                    android:id="@+id/menu_sub_guide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/menu_guide"
+                    android:layout_marginTop="3dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_light"
+                    android:text="각각 줄바꿈으로 구분. 설명, 가격은 생략 가능\n\n예시:\n\n@치킨류 #100% 국산 닭 사용 :15,000\n양념치킨\n불닭 #매운맛 조절가능\n후라이드\n\n@사이드\n콜라 :12,000\n모듬튀김 #감자, 치즈, 오징어 :2,000"
+                    />
+                <EditText
+                    android:id="@+id/menu_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_below="@id/menu_sub_guide"
+                    android:background="@drawable/rounded_bordered"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:textColor="@color/text_normal"
+                    android:textSize="13sp"
+                    android:gravity="top"
+                    />
+                <TextView
+                    android:id="@+id/menu_text_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/wc_blue"
+                    android:textSize="11sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_above="@id/menu_edit_text"
+                    />
+                <Button
+                    android:id="@+id/edit_menu_test"
+                    android:layout_below="@id/menu_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="메뉴 미리보기"
+                    android:textColor="@color/text_normal"
+                    android:textSize="13sp"
+                    android:background="@drawable/rounded_bordered"
+                    android:layout_marginTop="3dp"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="0"
+                android:background="@color/light_gray"
+                />
+            <Button
+                android:id="@+id/delivery_add_submit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0"
+                android:text="확인"
+                android:textColor="@color/text_normal"
+                android:textSize="16sp"
+                android:background="@drawable/rounded_bordered"
+                android:layout_margin="15dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
